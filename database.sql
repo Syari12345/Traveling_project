@@ -1,5 +1,7 @@
 CREATE DATABASE traveling_project;
 
+USE traveling_project;
+
 CREATE TABLE users (
     id int PRIMARY KEY AUTO_INCREMENT,
     emri VARCHAR(225) NOT null,

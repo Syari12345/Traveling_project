@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Journey Vista</title>
+
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/style.css">
-
 </head>
-<body>
 
 <body>
 
-    <main class="form-signin">
-        <form action="register.php" method="post">
+<header class="navbar navbar-dark bg-dark p-3 shadow">
+    <a class="navbar-brand" href="index.php">
+       Journey Vista
+    </a>
 
-        <h1 class="row-cols-md-3">Join Us! <br> <br>Register</h1>
+    <div class="navbar-nav">
+        <a href="login.php" class="nav-link">Login</a>
+        <a href="register_form.php" class="nav-link">Register</a>
+    </div>
+</header>
 
-            <div class="form-floating">
-                <input type="text" class="form-control" placeholder="Name" name="name" id="name">
-                <label for="name"></label>
-            </div>
+<div class="container py-5">
 
-             <div class="form-floating">
-                <input type="text" class="form-control" placeholder="Username" name="username" id="username">
-                <label for="username"></label>
-            </div>
+    <div class="p-5 mb-4 bg-light rounded-3 shadow-sm">
+        <div class="container-fluid py-5">
 
+            <h1 class="display-5 fw-bold">
+             Find your next Destiantion
+            </h1>
 
-            <div class="form-floating">
-                <input type="text" class="form-control" placeholder="Email" name="email" id="email">
-                <label for="email"></label>
-            </div>
+            <p class="col-md-8 fs-5">
+              Welcome to Journey Vista! 
+             Explore different destinations, discover new places
+            and book your next trip.
+            </p>
 
-            
-               <div class="form-floating">
-                <input type="password" class="form-control" placeholder="Password" name="password" id="password">
-                <label for="password"></label>
-            </div>
+            <a href="login.php" class="btn btn-primary btn-lg">
+                Login 
+            </a>
 
-                        <div class="checkbox mb-3 bg">
-                <label>
-                    <input type="checkbox" value="remember-me">Remember Me</label>
-            </div>
+            <a href="register_form.php" class="btn btn-outline-primary btn-lg">
+                Register
+            </a>
 
+        </div>
+    </div>
 
-</main>
+</div>
 
 </body>
 </html>
