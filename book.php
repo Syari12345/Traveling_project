@@ -14,7 +14,6 @@ if(isset($_POST['submit'])){
     }else{
         $sql="INSERT INTO booking(data,destinationID,userID,statusi,nr_personave)
         VALUES ('$data',$destination_id,$user_id,'Pending',$nr_personave)";
-
         $insertBooking=$conn->prepare($sql);
 
         $insertBooking->execute();

@@ -1,3 +1,4 @@
+
 <?php
 
 include_once("config.php");
@@ -9,42 +10,38 @@ if(isset($_POST['submit'])){
     $email=$_POST['email'];
     $password=$_POST['password'];
 
-    if(empty($emri)||empty($username)||empty($email)||empty($password)){
-        echo "Fill all fields!";
+    if(empty($emri)||
+        empty($username)||
+        empty($email)||
+        empty($password)
+    ){
+        echo "You have not filled in all the fields.";
+        header("refresh:2; url=register.php");
     }else{
 
-        $sql="SELECT * FROM users WHERE username=:username OR email=:email";
-        $checkUser=$conn->prepare($sql);
+        $sql="SELECT * FROM users WHERE username='$username' OR email='$email'";
+        $tempSql=$conn->prepare($sql);
+        $tempSql->execute();
 
-        $checkUser->execute([
-            'username'=>$username,
-            'email'=>$email
-        ]);
+        if($tempSql->rowCount()>0){
 
-        if($checkUser->rowCount()>0){
-
-            echo "Username or email already exists!";
+            echo "User with email/username already exists!";
+            header("refresh:2; url=register.php");
 
         }else{
 
-            $password=password_hash($password, PASSWORD_DEFAULT);
+            $hashedPassword=password_hash($password,PASSWORD_BCRYPT);
             $roli="client";
 
-            $sql="INSERT INTO users(emri,username,email,password,roli)
-            VALUES (:emri,:username,:email,:password,:roli)";
+            $query="INSERT INTO users(emri,username,email,password)
+            VALUES ('$emri','$username','$email','$hashedPassword')";
 
-            $insertUser=$conn->prepare($sql);
+            $insertSql=$conn->prepare($query);
+            $insertSql->execute();
 
-            $insertUser->execute([
-                'emri'=>$emri,
-                'username'=>$username,
-                'email'=>$email,
-                'password'=>$password,
-                'roli'=>$roli
-            ]);
+            echo "New user created successfully, in 2 seconds please login!";
+            header("refresh:2; url=login.php");
 
-            header("Location: login.php");
-            exit;
         }
     }
 }
@@ -58,7 +55,7 @@ if(isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Traveling Project - Register</title>
+    <title>Journy Vista - Register</title>
 
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">

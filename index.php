@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Traveling Project</title>
+    <title>Journy Vista</title>
 
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -34,7 +34,7 @@
             </h1>
 
             <p class="col-md-8 fs-5">
-                Welcome to Traveling Project!
+                Welcome to Journy Vista!
                 Explore different destinations, discover new places
                 and book your next trip with us.
             </p>
