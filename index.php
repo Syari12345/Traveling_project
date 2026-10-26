@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Journey Vista</title>
+    <title>Traveling Project</title>
 
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -15,12 +15,12 @@
 
 <header class="navbar navbar-dark bg-dark p-3 shadow">
     <a class="navbar-brand" href="index.php">
-       Journey Vista
+        Traveling Project
     </a>
 
     <div class="navbar-nav">
         <a href="login.php" class="nav-link">Login</a>
-        <a href="register_form.php" class="nav-link">Register</a>
+        <a href="register.php" class="nav-link">Register</a>
     </div>
 </header>
 
@@ -30,21 +30,21 @@
         <div class="container-fluid py-5">
 
             <h1 class="display-5 fw-bold">
-             Find your next Destiantion
+                Discover Your Next Destination
             </h1>
 
             <p class="col-md-8 fs-5">
-              Welcome to Journey Vista! 
-             Explore different destinations, discover new places
-            and book your next trip.
+                Welcome to Traveling Project!
+                Explore different destinations, discover new places
+                and book your next trip with us.
             </p>
 
             <a href="login.php" class="btn btn-primary btn-lg">
-                Login 
+                Login
             </a>
 
-            <a href="register_form.php" class="btn btn-outline-primary btn-lg">
-                Register
+            <a href="register.php" class="btn btn-outline-primary btn-lg">
+                Create Account
             </a>
 
         </div>
