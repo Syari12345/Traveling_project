@@ -14,9 +14,7 @@
 <body>
 
 <header class="navbar navbar-dark bg-dark p-3 shadow">
-    <a class="navbar-brand" href="index.php">
-        Traveling Project
-    </a>
+    <a class="navbar-brand" href="index.php"> Journy Vista </a>
 
     <div class="navbar-nav">
         <a href="login.php" class="nav-link">Login</a>
@@ -29,8 +27,7 @@
     <div class="p-5 mb-4 bg-light rounded-3 shadow-sm">
         <div class="container-fluid py-5">
 
-            <h1 class="display-5 fw-bold">
-                Discover Your Next Destination
+            <h1 class="display-5 fw-bold"> Discover Your Next Destination
             </h1>
 
             <p class="col-md-8 fs-5">
@@ -51,6 +48,7 @@
     </div>
 
 </div>
+
 
 </body>
 </html>

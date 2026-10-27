@@ -39,7 +39,7 @@ if(isset($_POST['submit'])){
             $insertSql=$conn->prepare($query);
             $insertSql->execute();
 
-            echo "New user created successfully, in 2 seconds please login!";
+            echo "New user created successfully, in 2 seconds you will be redirected to the login page.";
             header("refresh:2; url=login.php");
 
         }

@@ -30,11 +30,10 @@ $bookings_data=$selectBookings->fetchAll();
 <body>
 
 <header class="navbar navbar-dark sticky-top p-3 shadow">
-    <a class="navbar-brand px-3" href="home.php">
-        Traveling Project
-    </a>
+    <a class="navbar-brand px-3" href="home.php"> Journy Vista </a>
 
     <div class="navbar-nav">
+
         <div class="nav-item text-nowrap">
             <a href="home.php" class="nav-link px-3">Home</a>
         </div>
@@ -47,6 +46,7 @@ $bookings_data=$selectBookings->fetchAll();
     </div>
 </header>
 
+
 <div class="container py-5">
 
     <h1 class="h2 mb-4">My Bookings</h1>
@@ -58,9 +58,9 @@ $bookings_data=$selectBookings->fetchAll();
         <th scope="col">ID</th>
         <th scope="col">Travel Date</th>
         <th scope="col">Destination ID</th>
-        <th scope="col">User ID</th>
+         <th scope="col">User ID</th>
         <th scope="col">Status</th>
-        <th scope="col">Number of People</th>
+     <th scope="col">Number of People</th>
     </tr>
 </thead>
 

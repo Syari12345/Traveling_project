@@ -28,9 +28,7 @@ if(isset($_GET['destination_id'])){
 <body>
 
 <header class="navbar navbar-dark sticky-top p-3 shadow">
-    <a class="navbar-brand px-3" href="home.php">
-        Traveling Project
-    </a>
+    <a class="navbar-brand px-3" href="home.php"> Journy Vista </a>
 
     <div class="navbar-nav">
         <a href="home.php" class="nav-link px-3">Home</a>
@@ -92,7 +90,7 @@ if(isset($_GET['destination_id'])){
                                 class="form-control" id="nr_personave"
                                 name="nr_personave" placeholder="Number of people"
                                 required>
-                                <label for="nr_personave">Number of People</label>
+                                <label for="nr_personave">Number of people</label>
                             </div>
 
                             <button type="submit" name="submit"

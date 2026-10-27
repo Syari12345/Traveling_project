@@ -32,9 +32,7 @@ $destinations_data=$selectDestinations->fetchAll();
 <body>
 
 <header class="navbar navbar-dark sticky-top p-3 shadow">
-    <a class="navbar-brand px-3" href="home.php">
-        Traveling Project
-    </a>
+    <a class="navbar-brand px-3" href="home.php">Journy Vista </a>
 
     <div class="navbar-nav">
         <a href="home.php" class="nav-link px-3">Home</a>
@@ -102,15 +100,16 @@ $destinations_data=$selectDestinations->fetchAll();
 
                 <?php foreach($destinations_data as $destination){ ?>
 <tr>
-    <td><?php echo $destination['id']; ?></td>
+     <td><?php echo $destination['id']; ?></td>
     <td><?php echo $destination['emri_destinacionit']; ?></td>
     <td><?php echo $destination['shteti']; ?></td>
     <td><?php echo $destination['cmimi']; ?></td>
     <td>
+
         <a href="deleteDestination.php?id=<?php echo $destination['id']; ?>"
-           class="btn btn-sm btn-danger">
-            Delete
-        </a>
+        class="btn btn-sm btn-danger">Delete</a>
+        <a href="editDestination.php?id=<?php echo $destination['id']; ?>"
+        class="btn btn-sm btn-secondary">Edit</a>
     </td>
 </tr>
 

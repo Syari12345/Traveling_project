@@ -14,7 +14,7 @@ $destinations_data=$selectedDestinations->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traveling Project</title>
+    <title>Journy Vista</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -22,7 +22,7 @@ $destinations_data=$selectedDestinations->fetchAll(PDO::FETCH_ASSOC);
 <body>
 
 <header class="navbar navbar-dark bg-dark p-3 shadow">
-    <a class="navbar-brand" href="home.php">Traveling Project</a>
+    <a class="navbar-brand" href="home.php">Journy Vistat</a>
 
     <div class="navbar-nav">
         <a href="bookings.php" class="nav-link">My Bookings</a>
@@ -54,8 +54,7 @@ $destinations_data=$selectedDestinations->fetchAll(PDO::FETCH_ASSOC);
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                         <a href="details.php?destination_id=<?php echo $destination['id']; ?>"
-                           class="btn btn-sm btn-outline-primary">
-                            Details
+                           class="btn btn-sm btn-outline-primary"> Details
                         </a>
 
                         <a href="details.php?destination_id=<?php echo $destination['id']; ?>"
